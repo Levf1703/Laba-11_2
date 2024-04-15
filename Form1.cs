@@ -1,13 +1,6 @@
 namespace WinFormsApp_лаба_11_2
 {
-    public partial class Form1 : Form
-    {
-        public Form1()
-        {
-            InitializeComponent();
-        }
-        List<AEROFLOT> time_table = new List<AEROFLOT>();
-        class AEROFLOT
+    class AEROFLOT
         {
             public string city;
             public string number;
@@ -32,6 +25,13 @@ namespace WinFormsApp_лаба_11_2
                 return $"{number} {plane}";
             }
         }
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+        List<AEROFLOT> time_table = new List<AEROFLOT>();
         private void button1_Click(object sender, EventArgs e)
         {
             string[] cities = { "Сочи", "Москва", "Красноярск", "Владивосток", "Стамбул", "Кемерово" };
